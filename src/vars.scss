@@ -1,0 +1,17 @@
+$bg-c: #1b1b1b;
+$font-dark-c: #1b1b1b;
+$font-c: #fff;
+$text-s: 14px;
+$title-s: 30px;
+$sub-s: 15px;
+$hover-c: #2450ca;
+$blue-c: #2450ca;
+
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}

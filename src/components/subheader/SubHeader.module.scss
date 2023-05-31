@@ -1,0 +1,17 @@
+@import '../../vars.scss';
+
+.subheader {
+    padding: 5px 10px;
+    background-color: $blue-c;
+    color: $font-c;
+
+    &__item {
+        font-size: $sub-s;
+    }
+
+    &__inner {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}

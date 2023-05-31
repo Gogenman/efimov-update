@@ -1,0 +1,26 @@
+@import '../../vars.scss';
+
+.gridSection {
+    display: grid;
+    grid-template: repeat(2, 5fr) / repeat(3, 5fr);
+    // grid-gap: 10px;
+    background-color: #aeaeae;
+    justify-content: center;
+    height: 500px;
+
+    &__item {
+        background-color: #fff;
+        overflow: hidden;
+        cursor: pointer;
+
+        img {
+            max-width:100%;
+            height:auto;
+        }
+    }
+
+    &__main {
+        background-color: $bg-c;
+        padding: 50px 0;
+    }
+}

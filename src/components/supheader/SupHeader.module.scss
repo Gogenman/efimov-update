@@ -1,0 +1,29 @@
+@import '../../vars.scss';
+
+.header {
+    background-color: $bg-c;
+    color: $font-c;
+    padding: 10px;
+
+    &__logo {
+        font-size: $title-s;
+        font-weight: 600;
+    }
+
+    &__li {
+        font-size: $text-s;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $font-c;
+        margin-right: 15px;
+        transition: all .2s ease-in-out;
+
+        &:last-child {
+            margin-right: 0px;  
+        }
+
+        &:hover {
+            color: $hover-c;
+        }
+    }
+}
