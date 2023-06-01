@@ -1,12 +1,12 @@
 import style from './Promo.module.scss'
 
-const Promo = () => {
+const Promo = ({title}) => {
     return (
         <div className={style.promo}>
             <div className="container">
                 <div className={style.promo__inner}>
                     <h1 className={style.promo__title}>
-                        EFIMOFF VET Clinik
+                        {title}
                     </h1>
                 </div>
             </div>
