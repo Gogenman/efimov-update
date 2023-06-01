@@ -1,4 +1,4 @@
-$bg-c: #1b1b1b;
+$bg-c: #282828;
 $font-dark-c: #1b1b1b;
 $font-c: #fff;
 $text-s: 14px;
@@ -6,6 +6,34 @@ $title-s: 30px;
 $sub-s: 15px;
 $hover-c: #2450ca;
 $blue-c: #2450ca;
+$mask: #2450ca4d;
+
+$zoom: zoom 20s ease-in infinite;
+$clip-path: clip-path 15s ease-in-out infinite;
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1) rotate(5deg);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes clip-path {
+    0% {
+        clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0 100%);
+    }
+    50% {
+        clip-path: polygon(0% 0%, 100% 0%, 50% 100%, 0% 100%);
+    }
+    100% {
+        clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0 100%);
+    }
+}
 
 
 @keyframes fade {

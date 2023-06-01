@@ -1,0 +1,45 @@
+@import '../../vars.scss';
+
+.footer {
+    background-color: $bg-c;
+    padding: 40px 0;
+    color: $font-c;
+
+    &__container {
+        max-width: 950px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__li {
+        list-style-type: none;
+        font-size: $text-s;
+        cursor: pointer;
+        margin-bottom: 10px;
+        transition: all .2s linear;
+
+        &:hover {
+            color: $hover-c;
+        }
+    }
+
+    &__li a{
+        list-style-type: none;
+        font-size: $text-s;
+        text-decoration: none;
+        color: $font-c;
+        cursor: pointer;
+        margin-bottom: 10px;
+        transition: all .2s linear;
+
+        &:hover {
+            color: $hover-c;
+        }
+    }
+
+    &__title {
+        margin-bottom: 20px;
+    }
+}

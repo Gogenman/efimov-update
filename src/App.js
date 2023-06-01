@@ -1,10 +1,38 @@
-import { useState } from "react";
+import { useState } from "react"
 
-import GridSection from "./components/gridSection/GridSection";
+import GridSection from "./components/gridSection/GridSection"
 import Header from "./components/header/Header"
 import Promo from "./components/promo/Promo"
+import MyMap from "./components/map/MyMap"
+import Footer from "./components/footer/Footer"
+import Descr from "./components/descr/Descr"
 
 function App() {
+  const [footer, setFooter] = useState({
+    services: [
+      'диагностика',
+      'хирургия',
+      'ортопедия',
+      'терапия',
+      'исследования',
+      'дерматология'
+    ],
+    adress: [
+      'ул. Циолковского, 10-А',
+      '+7(812) 931-21-95',
+      '+7(812) 495-65-69',
+      'Ленинский пр., 84, корп. 2',
+      '+7(812) 952-42-69',
+      '+7(921) 952-42-69'
+    ],
+    navbar: [
+      'статьи',
+      'о нас',
+      'услуги',
+      'цены',
+    ]
+  })
+
   const [posts, setPost] = useState([
     {
         img: 'https://images.unsplash.com/photo-1630438994394-3deff7a591bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80', 
@@ -40,11 +68,15 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+        <Header />
       <Promo title='Вет клиника Доктора Ефимова А.Н'/>
+      <Descr />
       <GridSection posts={posts}/>
+
+      <MyMap/>
+      <Footer footer={footer}/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

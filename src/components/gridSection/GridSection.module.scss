@@ -3,7 +3,6 @@
 .works {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 100px;
     padding-bottom: 100px;
     background-color: $bg-c;
 
@@ -39,7 +38,7 @@
         width: 100%;
         height: 100%;
     
-        background-color: rgba(69, 99, 232, 0.9);
+        background-color: rgba(69, 99, 232, 0.8);
         opacity: 0;
     
         text-align: center;

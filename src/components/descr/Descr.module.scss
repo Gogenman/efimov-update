@@ -1,0 +1,39 @@
+@import '../../vars.scss';
+
+.descr {
+    display: flex;
+    align-items: center;
+    background-color: $bg-c;
+    color: $font-c;
+
+    &__img_block {
+        clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0 100%);
+        position: relative;
+        animation: $clip-path;
+
+        img {
+            animation: $zoom;
+        }
+    }
+
+    &__img_mask {
+    
+        position: absolute;
+        background-color: $mask;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+
+    &__text {
+        width: 50%;
+        padding: 0 30px;
+
+        p {
+            line-height: 1.8;
+            font-size: 20px;
+        }
+    } 
+}
