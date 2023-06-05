@@ -29,7 +29,7 @@ const Promo = () => {
                         custom={5} 
                         className={style.promo__img}
                     >
-                        <img src="https://images.unsplash.com/photo-1568383293350-156a59eb6491?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" />
+                        <img src="https://images.unsplash.com/photo-1621567390337-1984f38afa7b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" alt="" />
                         <div className={style.promo__img_mask}></div>
                     </motion.div>
                 </div>
