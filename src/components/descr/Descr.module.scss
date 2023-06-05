@@ -5,6 +5,7 @@
     align-items: center;
     background-color: $bg-c;
     color: $font-c;
+    // clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 0% 100%);
 
     &__img_block {
         clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0 100%);

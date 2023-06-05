@@ -1,6 +1,6 @@
 @import '../../vars.scss';
 
-.promo {
+.about {
     height: 100vh;
     
     background-color: $font-c;
@@ -16,11 +16,11 @@
 
 
     &__img {
-        width: 70%; 
+        width: 60%; 
         overflow: hidden;
         height: 100vh;
-        clip-path: polygon(60% 0%, 100% 0%, 100% 100%, 0 100%);
-        // animation: $fade-right;
+
+        animation: $clip-path;
 
         img {
             width: auto;
@@ -43,20 +43,12 @@
     }
 
     &__title_wrapper {
-        opacity: 1;
-        width: 50%;
-        margin-left: 30px;
-        // animation: $fade-left;
+        width: 40%;
+        padding-right: 100px;
     }
 
-    &__title {
-        font-family: 'Unbounded', cursive;
-        color: $bg-c;
-        font-size: 30px;
-
-        span {
-            color: $blue-c;
-            font-size: 60px;
-        }
+    &__text {
+        line-height: 1.8;
+        font-size: $text-s;
     }
 }

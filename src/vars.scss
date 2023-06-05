@@ -1,15 +1,21 @@
 $bg-c: #282828;
 $font-dark-c: #1b1b1b;
 $font-c: #fff;
-$text-s: 14px;
+$link-s: 14px;
+$text-s: 16px;
 $title-s: 30px;
+$logo-s: 25px;
 $sub-s: 15px;
-$hover-c: #2450ca;
-$blue-c: #2450ca;
-$mask: #2450ca4d;
+$hover-c: #2f46c7;
+$blue-c: #2f46c7;
+$hover-grid: #2f46c7ad;
+$mask: #2f46c760;
 
 $zoom: zoom 20s ease-in infinite;
 $clip-path: clip-path 15s ease-in-out infinite;
+$fade: fade .8s ease-in;
+$fade-left: fade-left 1s ease-in-out;
+$fade-right: fade-right 1s ease-in-out;
 
 @keyframes zoom {
     0% {
@@ -39,7 +45,29 @@ $clip-path: clip-path 15s ease-in-out infinite;
 @keyframes fade {
     from {
         opacity: 0;
+        transform:  scale(1.05);
     } to {
         opacity: 1;
+        transform:  scale(1);
+    }
+}
+
+@keyframes fade-left {
+    from {
+        opacity: 0;
+        transform:  translateX(-100px);
+    } to {
+        opacity: 1;
+        transform:  translateX(0px);
+    }
+}
+
+@keyframes fade-right {
+    from {
+        opacity: 0;
+        transform:  translateX(100px);
+    } to {
+        opacity: 1;
+        transform:  translateX(0px);
     }
 }

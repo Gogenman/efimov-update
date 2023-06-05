@@ -6,12 +6,18 @@
     padding: 10px;
 
     &__logo {
-        font-size: $title-s;
+        font-size: $logo-s;
         font-weight: 600;
+        display: flex;
+        align-items: center;
+
+        img {
+            margin-right: 10px;
+        }
     }
 
     &__li {
-        font-size: $text-s;
+        font-size: $link-s;
         text-decoration: none;
         text-transform: uppercase;
         color: $font-c;
@@ -21,6 +27,22 @@
         &:last-child {
             margin-right: 0px;  
         }
+
+        &:hover {
+            color: $hover-c;
+        }
+    }
+
+    &__li_btn {
+        font-size: $link-s;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $font-c;
+        margin-right: 15px;
+        transition: all .2s ease-in-out;
+        background-color: transparent;
+        cursor: pointer;
+        border: 0;
 
         &:hover {
             color: $hover-c;
