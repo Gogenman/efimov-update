@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/efimov-update/static/css/main.df1302c0.css",
+    "main.js": "/efimov-update/static/js/main.146216fc.js",
+    "index.html": "/efimov-update/index.html",
+    "main.df1302c0.css.map": "/efimov-update/static/css/main.df1302c0.css.map",
+    "main.146216fc.js.map": "/efimov-update/static/js/main.146216fc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.df1302c0.css",
+    "static/js/main.146216fc.js"
+  ]
+}
